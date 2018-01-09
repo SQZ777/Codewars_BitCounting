@@ -17,6 +17,12 @@ namespace Codewars_BitCounting
         {
             Assert.AreEqual("10", Kata.BinaryIt(2));
         }
+
+        [TestMethod]
+        public void Input_2_Should_Be_1()
+        {
+            Assert.AreEqual(1,Kata.CountBits(2));
+        }
     }
 
     public class Kata
@@ -24,6 +30,11 @@ namespace Codewars_BitCounting
         public static string BinaryIt(int n)
         {
             return Convert.ToString(n, 2);
+        }
+
+        public static int CountBits(int n)
+        {
+            throw new NotImplementedException();
         }
     }
 }
