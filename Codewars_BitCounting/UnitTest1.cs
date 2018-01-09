@@ -28,14 +28,7 @@ namespace Codewars_BitCounting
 
     public class Kata
     {
-        public static string BinaryIt(int n)
-        {
-            return Convert.ToString(n, 2);
-        }
-
-        public static int CountBits(int n)
-        {
-            return BinaryIt(n).Count(x => x == '1');
-        }
+        public static string BinaryIt(int n) => Convert.ToString(n, 2);
+        public static int CountBits(int n) => BinaryIt(n).Count(x => x == '1');
     }
 }
