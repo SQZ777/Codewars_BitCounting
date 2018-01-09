@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Codewars_BitCounting
@@ -21,7 +22,7 @@ namespace Codewars_BitCounting
         [TestMethod]
         public void Input_2_Should_Be_1()
         {
-            Assert.AreEqual(1,Kata.CountBits(2));
+            Assert.AreEqual(1, Kata.CountBits(2));
         }
     }
 
@@ -34,7 +35,7 @@ namespace Codewars_BitCounting
 
         public static int CountBits(int n)
         {
-            throw new NotImplementedException();
+            return BinaryIt(n).Count(x => x == '1');
         }
     }
 }
