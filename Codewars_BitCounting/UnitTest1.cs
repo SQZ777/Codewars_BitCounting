@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Codewars_BitCounting
@@ -8,7 +9,13 @@ namespace Codewars_BitCounting
         [TestMethod]
         public void BinaryIt_Input_1_Should_Be_1()
         {
-            Assert.AreEqual("1",Kata.BinaryIt(1));
+            Assert.AreEqual("1", Kata.BinaryIt(1));
+        }
+
+        [TestMethod]
+        public void BinaryIt_Input_2_Should_Be_1()
+        {
+            Assert.AreEqual("10", Kata.BinaryIt(2));
         }
     }
 
@@ -16,7 +23,7 @@ namespace Codewars_BitCounting
     {
         public static string BinaryIt(int n)
         {
-            return "1";
+            return Convert.ToString(n, 2);
         }
     }
 }
